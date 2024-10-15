@@ -1,0 +1,2260 @@
+/* Reseteo el margin y el padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Color de fondo del sitio */
+.fondo {
+    background-color: #000000;
+}
+
+/* Estilo para links en verificar.html */
+.cambiar-estilo {
+    font-size: 1rem;
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Margins específicos para alinear links en verificar.html */
+.margin-dirección {
+    margin-left: 598px;
+}
+
+.margin-email {
+    margin-left: 579px;
+}
+
+.margin-teléfono {
+    margin-left: 586px;
+}
+
+.margin-items {
+    margin-left: 25px;
+}
+
+.margin-precio {
+    margin-left: 416px;
+}
+
+.margin-envío {
+    margin-left: 25px;
+}
+
+.margin-p-envío {
+    margin-left: 483px;
+}
+
+.margin-total {
+    margin-left: 514px;
+}
+
+/* Margins generales */
+.margin-top {
+    margin-top: 25px;
+}
+
+.margin-botton {
+    margin-bottom: 25px;
+}
+
+/* Margen izquierdo del logo en el header */
+.logo {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Estilo de los links del menú del header */
+.links-menu {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo de los links del footer */
+.links-footer {
+    text-decoration: none;
+    color: bisque;
+    font-size: 1rem;
+}
+
+/* Estilo de los links del main */
+.links-main {
+    text-decoration: none;
+    color: indianred;
+    font-size: 0.8rem;
+}
+
+/* Estilo de las listas sin viñetas */
+.estilo-lista {
+    list-style: none;
+}
+
+/* Estilo principal de los párrafos */
+.estilo-parrafo {
+    color: aqua;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 20px;
+}
+
+/* Estilo de las calificaciones de los clientes */
+.estilo-calificaciones {
+    color: chocolate;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Estilo general de h1 */
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: hsl(320, 40%, 49%);
+    text-align: center;
+    font-size: 4rem;
+    padding: 25px;
+}
+
+
+/* Color para párrafos no principales */
+.color-text {
+    color: aquamarine;
+}
+
+/* Color para labels del sitio */
+.label-color {
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+
+}
+
+/**********************************************************************************************************************
+*******************************************************************************************************************/
+/*aplicando flexbox en el header*/
+.logo-header {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    gap: 160px;
+    border-bottom: 1px solid chartreuse;
+}
+
+.header div {
+    display: flex;
+    /*  justify-items: center; */
+}
+
+.div-menu {
+    align-items: center;
+}
+
+.div-menu label {
+    margin-right: 48px;
+    font-size: 1.5rem;
+}
+
+.ul-display li {
+
+    display: inline;
+    margin-inline: 20px;
+    border: 2px solid rgb(181, 250, 103);
+    border-radius: 25px;
+    padding: 5px;
+    align-items: center;
+
+}
+
+.div2 {
+    margin-left: 62px;
+}
+
+/****************************************************  INDEX*****************************************************/
+
+/********************************************************************************************************************
+*****************************************************************************************************************/
+/*aplicando flexbox en el footer*/
+.footer1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-items: center;
+    padding: 5px;
+    background-color: #0f0f0f;
+    border-bottom: 1px solid #383535;
+    border-top: 1px solid #383535;
+    justify-content: space-around;
+}
+
+.footer1 label {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.footer1 div {
+    margin-inline: 50px;
+}
+
+.color-footer {
+
+    color: rgb(245, 199, 84);
+    font-size: 1.4rem;
+}
+
+.div-footer1 label {
+    justify-content: center;
+}
+
+.label-div3 {
+    margin-left: 12px;
+}
+
+#div4,
+#div5 {
+    justify-content: center;
+}
+
+.imagen-footer {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/************************************************   TIENDA  ***************************************************
+**********************************************                  *************************************
+************************************************* section 5 *************************/
+
+.section5 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/********************************* section5 caja-izq **********************************/
+
+
+
+.section5 .caja-izq {
+    display: flex;
+
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /*   margin-left: 3rem; */
+    margin-bottom: 48px;
+    width: 600px;
+    height: 600px;
+    border: 1.6px solid cornflowerblue;
+}
+
+.section5 .label-tienda {
+    color: #e722cd;
+    /* background-color: aqua;*/
+    border-top: 1.6px solid cornflowerblue;
+    border-bottom: 1.6px solid cornflowerblue;
+}
+
+.caja-izq div {
+    margin-left: 48px;
+    margin-bottom: 8px
+}
+
+/********************************* section5 caja-der ********************************/
+
+.section5 .caja-der {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 48px;
+    margin-bottom: 48px;
+    width: 600px;
+    height: 600px;
+    border: 1.6px solid cornflowerblue;
+}
+
+.caja-der div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    margin-left: 48px;
+    margin-bottom: 8px;
+}
+
+
+.section5 .caja-der label {
+
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+}
+
+.section5 .label-caj-der {
+    margin-top: 10px;
+    width: 220px;
+    height: 60px;
+    border: 1.6px solid cornflowerblue;
+
+}
+
+.section5 .labcajder-color {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.section5 .labcajder-cambiar {
+    margin-top: -5px;
+    margin-left: 150px;
+}
+
+.section5 .labcajder-negro {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.boton-carrito .success {
+    margin-top: -50px;
+    margin-left: 28px;
+    width: 160px;
+    padding: 10px;
+    color: #e722cd;
+    font-size: 0.7rem;
+    background-color: rgb(3, 3, 3);
+    border: 3.2px solid white;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+.Envío {
+    margin-top: -60px;
+}
+
+.parrafo-carrito {
+    text-align: justify;
+    width: 400px;
+    margin-top: -80px;
+    color: aqua;
+}
+
+/**********************************************                  *************************************
+************************************************* section 6 *************************/
+
+.section6 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.section6 div {
+    flex-direction: column;
+    margin-top: 0px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section6 label {
+    margin-top: 10px;
+}
+
+
+
+/************************************************   CARRITO  ***************************************************
+**********************************************                  *************************************
+
+************************************************* section 7 ************************
+*****************************************          tu orden         *********************/
+
+.section7 {
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+}
+
+.tu-orden {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 360px;
+    border: 1.6px solid cornflowerblue;
+}
+
+.label-carrito {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(197, 247, 132);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.producto1 {
+    display: flex;
+    margin-left: 20px;
+    width: 400px;
+    height: 150px;
+    border: 1.6px solid cornflowerblue;
+}
+
+.img-p1 {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.labels-orden1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-p1-1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(197, 247, 132);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.label-p1-2 {
+    margin-top: 5px;
+    margin-left: 20px;
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.label-p1-3 {
+    margin-top: 10px;
+    margin-left: 100px;
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.producto2 {
+    display: flex;
+    margin-left: 20px;
+    width: 400px;
+    height: 150px;
+    border: 1.6px solid cornflowerblue;
+}
+
+.img-p2 {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.labels-orden2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-p2-1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(197, 247, 132);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.label-p2-2 {
+    margin-top: 5px;
+    margin-left: 20px;
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.label-p2-3 {
+    margin-top: 10px;
+    margin-left: 100px;
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/*****************************************          total         *********************/
+
+.total {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 1.6px solid cornflowerblue;
+}
+
+
+.parr-total {
+    margin-top: 20px;
+    text-align: center;
+    color: #dd9595;
+}
+
+.div-total {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(197, 247, 132);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.label1 {
+    margin-left: 50px;
+}
+
+.total .btn-ir-a-envios {
+    margin-top: 15px;
+    margin-left: 80px;
+    width: 80px;
+    padding: 5px;
+    color: #e722cd;
+    font-size: 0.7rem;
+    background-color: rgb(3, 3, 3);
+    border: 2px solid white;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+/************************************************ section 8 ************************
+*******************************************************************************/
+
+.section8 {
+    display: flex;
+    justify-content: center;
+    margin-left: -251px;
+
+}
+
+.caja-section8 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 600px;
+    height: 340px;
+    border: 1.6px solid cornflowerblue;
+}
+
+.caja-section8 .div-1 {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.caja-section8 .div-2 {
+    margin-top: 80px;
+    /*  margin-left: 100px;*/
+    width: 600px;
+    border-bottom: 1.6px solid cornflowerblue;
+}
+
+.caja-section8 .div-2 label {
+    margin-bottom: -30px;
+    margin-left: 100px;
+}
+
+.caja-section8 .div-3 {
+    margin-top: 30px;
+    /*  margin-left: 100px;*/
+    width: 600px;
+    border-bottom: 1.6px solid cornflowerblue;
+}
+
+.caja-section8 .div-3 label {
+    margin-bottom: -30px;
+    margin-left: 100px;
+}
+
+.caja-section8 .div-4 {
+    margin-top: 30px;
+    /* margin-left: 100px;*/
+    width: 600px;
+    border-bottom: 1.6px solid cornflowerblue;
+}
+
+.caja-section8 .div-4 label {
+    margin-bottom: -30px;
+    margin-left: 100px;
+}
+
+
+/**********************************************************************************************************
+*******************************************     VERIFICAR         ***********************************************
+
+*******************************************     Checkout section9      ***********************************/
+/*********************************************** copete  ****************************************/
+.copete {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copete .cop1 {
+    display: flex;
+    align-items: center;
+}
+
+/***************************************** caja izquierda datos **********************************/
+.caja-datos-y-total {
+    display: flex;
+}
+
+.datos {
+    margin-top: 30px;
+    margin-left: 332px;
+    display: flex;
+    width: 600px;
+    height: 230px;
+    border: 1.6px solid cornflowerblue;
+    /*  background-color: #dd9595;*/
+}
+
+.datos-caja1 {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-caja1 label {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.datos-caja2 {
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-caja2 label {
+    margin-bottom: 20px;
+}
+
+/**********************************************   caja derecha total ************************************/
+/**********************************************  caja derecha parte izquierda******************/
+
+.caja-derecha {
+    margin-top: 30px;
+    margin-left: 332px;
+    padding-top: 10px;
+    display: flex;
+    /*    flex-direction: column;*/
+    width: 380px;
+    height: 220px;
+    border: 1.6px solid cornflowerblue;
+    /*  background-color: #dd9595;*/
+}
+
+.caja-derecha label {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/************************************************* estilo de los labels caja derecha**********/
+.caja-derecha .total-label {
+    margin-top: 40px;
+    margin-left: 30px;
+    color: rgb(197, 247, 132);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/***************************************************linea de la caja derecha ***********************/
+.linea-total {
+    margin-top: 15px;
+    margin-left: 35px;
+    width: 312px;
+    border-bottom: 1.6px solid cornflowerblue;
+}
+
+/******************************************** caja derecha parte izquierda********************************/
+
+.caja-derecha .der-izq {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/******************************************* caja derecha parte derecha********************************/
+.caja-derecha .der-der {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    margin-left: -100px;
+    width: 100px;
+    height: 160px;
+    /*  background-color: #383535;*/
+}
+
+.caja-derecha .precio-final {
+    margin-top: 55px;
+}
+
+/*******************************************     Detalle envio section10      ***********************************/
+/********************************************************************************************************/
+
+.label-detalle {
+    color: rgb(197, 247, 132);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.caja-parrafo {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 500px;
+    height: 250 px;
+    /* background-color: antiquewhite;*/
+}
+
+.labels {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.labels label {
+    margin-bottom: 5px;
+}
+
+.linea-detalle {
+    margin-top: 10px;
+    margin-left: 55px;
+    width: 450px;
+    border-bottom: 1.6px solid cornflowerblue;
+}
+
+
+#btn-detalle {
+    margin-top: 25px;
+    margin-left: 30px;
+    padding: 10px;
+    color: #e722cd;
+    font-size: 1rem;
+    background-color: rgb(3, 3, 3);
+    border: 3.2px solid white;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+p {
+    color: #9cb850;
+    text-align: center;
+    text-align: justify;
+}
+
+/*******************************************     Pago section11      ***********************************/
+/********************************************************************************************************/
+
+.caja-formulario {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.label-pago {
+    margin-top: 20px;
+}
+
+.label-boton {
+    margin-top: 20px;
+}
+
+/**********************************************************************************************************
+*******************************************    CONTACTO        ***********************************************
+
+*******************************************     section12    ***********************************/
+.section12 {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.section12 div {
+    margin-top: 15px;
+}
+
+/*******************************************     section13    ***********************************/
+.section13 {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.section13 div {
+    margin-top: 15px;
+}
+
+.section13 button {
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/**********************************************************************************************************
+***************************************************************************************
+**********************************************************/
+
+#nosotros {
+    background-color: #000000;
+}
+
+
+
+/* Clase para centrar elementos */
+.centrar {
+    text-align: center;
+}
+
+/***************************************************  INDEX.HTML GRID-CONTAINER1**********************************/
+
+.grid-container1 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    /*SEPARAR ELEMENTOS DE LA GRILLA*/
+    /* column-gap: 15px;*/
+    /*row-gap: 25px;*/
+    grid-template-areas:
+        ". item-4 item-5"
+        ". item-2 ."
+        "item-1 item-2 item-3"
+        "item-1 item-2 item-3"
+    ;
+    gap: 20px;
+}
+
+.grid-container1 .div-1 {
+    grid-area: item-1;
+    background-color: yellow;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.grid-container1 .div-1 h3 {
+    font-size: 2vw;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #4b161f;
+}
+
+.grid-container1 .div-2 {
+    grid-area: item-2;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container1 .div-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Estilo para botones "tienda" y "todos los productos" */
+.grid-container1 .div-2 button {
+    margin-top: 25px;
+    padding: 10px;
+    color: #e722cd;
+    font-size: 1rem;
+    background-color: rgb(3, 3, 3);
+    border: 3.2px solid white;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+/* Efecto al pasar el cursor sobre botones */
+.grid-container1 .div-2 button:hover {
+    background-color: aliceblue;
+}
+
+.grid-container1 .div-3 {
+    grid-area: item-3;
+    background-color: blue;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.grid-container1 .div-3 h3 {
+    font-size: 2vw;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #4b161f;
+}
+
+
+
+.grid-container1 .div-4 {
+    grid-area: item-4;
+    background-color: rgb(44, 158, 211);
+    border-radius: 5px;
+    align-content: center;
+}
+
+.grid-container1 .div-4 h1 {
+    font-size: 4vw;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #1db643;
+}
+
+.grid-container1 .div-5 {
+    padding-top: 15px;
+    grid-area: item-5;
+    background-color: rgb(233, 41, 201);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container1 .div-5 h2 {
+    font-size: 1vw;
+    /* Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #281499;
+}
+
+/*******************************************FINALIZA INDEX.HTML GRID-CONTAINER1****************************************/
+
+/***********************************************INDEX.HTML GRID-CONTAINER2*******************************************/
+
+.grid-container2 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    /*SEPARAR ELEMENTOS DE LA GRILLA*/
+    /* column-gap: 15px;*/
+    /*row-gap: 25px;*/
+    grid-template-areas:
+        ". item-1 item-1 ."
+        "item-2 item-3 item-4 item-5"
+    ;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-container2 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 3vw;
+    /* Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container2 .div-2 {
+    grid-area: item-2;
+    background-color: #dd9595;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container2 .div-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container2 .div-2 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+.grid-container2 .div-3 {
+    grid-area: item-3;
+    background-color: #e722cd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container2 .div-3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container2 .div-3 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+.grid-container2 .div-4 {
+    grid-area: item-4;
+    background-color: rgb(247, 46, 72);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container2 .div-4 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container2 .div-4 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+.grid-container2 .div-5 {
+    grid-area: item-5;
+    background-color: brown;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container2 .div-5 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container2 .div-5 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+/*******************************************FINALIZA INDEX.HTML GRID-CONTAINER2****************************************/
+
+/***********************************************INDEX.HTML GRID-CONTAINER3*******************************************/
+
+.grid-container3 {
+    margin: 10px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: repeat(5, 1.2fr);
+    grid-template-rows: repeat(2, auto);
+    /* Tres filas */
+    /*SEPARAR ELEMENTOS DE LA GRILLA*/
+    /* column-gap: 15px;*/
+    /*row-gap: 25px;*/
+    grid-template-areas:
+        ". item-1 item-1 item-1 ."
+        "item-2 item-3 item-4 item-5 item-6"
+    ;
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid-container3 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 3vw;
+    /* Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container3 .div-2 {
+    grid-area: item-2;
+    background-color: #1c976e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container3 .div-2 img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita el espacio adicional debajo de la imagen */
+    border-radius: 5px;
+}
+
+.grid-container3 .div-2 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+.grid-container3 .div-3 {
+    grid-area: item-3;
+    background-color: #295394;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container3 .div-3 img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita el espacio adicional debajo de la imagen */
+    border-radius: 5px;
+}
+
+.grid-container3 .div-3 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+.grid-container3 .div-4 {
+    grid-area: item-4;
+    background-color: #a050b8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container3 .div-4 img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita el espacio adicional debajo de la imagen */
+    border-radius: 5px;
+}
+
+.grid-container3 .div-4 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+.grid-container3 .div-5 {
+    grid-area: item-5;
+    background-color: #38eca1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container3 .div-5 img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita el espacio adicional debajo de la imagen */
+    border-radius: 5px;
+}
+
+.grid-container3 .div-5 label {
+    font-size: 1rem;
+    /*Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    color: #eaf0f1;
+}
+
+.grid-container3 .div-6 {
+    grid-area: item-6;
+    background-color: #dd7a2a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container3 .div-6 img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita el espacio adicional debajo de la imagen */
+    border-radius: 5px;
+}
+
+.grid-container3 .div-6 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+/*******************************************FINALIZA INDEX.HTML GRID-CONTAINER3****************************************/
+
+/***********************************************INDEX.HTML GRID-CONTAINER4*******************************************/
+
+.grid-container4 {
+    margin: 10px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        ". item-1 ."
+        "item-2 item-3 item-4"
+    ;
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid-container4 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container4 .div-1 h2 {
+    font-size: 3vw;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container4 .div-2 {
+    grid-area: item-2;
+    background-color: #1c976e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container4 .div-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container4 .div-3 {
+    grid-area: item-3;
+    background-color: #295394;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container4 .div-3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container4 .div-4 {
+    grid-area: item-4;
+    background-color: #a050b8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container4 .div-4 img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita el espacio adicional debajo de la imagen */
+    border-radius: 5px;
+}
+
+/*******************************************FINALIZA INDEX.HTML GRID-CONTAINER4****************************************/
+
+/***********************************************INDEX.HTML GRID-CONTAINER5*******************************************/
+
+.grid-container5 {
+    margin: 10px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    /* Cuatro columnas */
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        ". item-1 item-1 ."
+        ". item-2 item-2 ."
+        "item-3 item-3 item-3 item-3"
+    ;
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid-container5 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container5 .div-1 h2 {
+    font-size: 3vw;
+    /* Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container5 .div-2 {
+    grid-area: item-2;
+    background-color: #1c976e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container5 .div-2 img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Evita el espacio adicional debajo de la imagen */
+    border-radius: 5px;
+}
+
+.grid-container5 .div-3 {
+    grid-area: item-3;
+    background-color: #295394;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container5 .div-3 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+/*******************************************FINALIZA INDEX.HTML GRID-CONTAINER5****************************************/
+
+/***********************************************INDEX.HTML GRID-CONTAINER6*******************************************/
+
+.grid-container6 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        ". item-1 item-1 ."
+        "item-2 item-3 item-4 item-5"
+    ;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-container6 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container6 .div-1 h2 {
+    font-size: 3vw;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container6 .div-2 {
+    grid-area: item-2;
+    background-color: #dd9595;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container6 .div-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container6 .div-2 label {
+    font-size: 1rem;
+    color: #7450b8;
+}
+
+
+.grid-container6 .div-3 {
+    grid-area: item-3;
+    background-color: #e722cd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container6 .div-3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container6 .div-3 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+.grid-container6 .div-4 {
+    grid-area: item-4;
+    background-color: rgb(247, 46, 72);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container6 .div-4 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container6 .div-4 label {
+    font-size: 1rem;
+    color: #7450b8;
+}
+
+.grid-container6 .div-5 {
+    grid-area: item-5;
+    background-color: brown;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container6 .div-5 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.div-5 label {
+    font-size: 1rem;
+    color: #7450b8;
+}
+
+/*******************************************FINALIZA INDEX.HTML GRID-CONTAINER6****************************************/
+/********************************************************************************************************************/
+/*********************************************  CARRITO.HTML GRID-CONTAINER7***************************************/
+
+.grid-container7 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: .25fr 1fr .625fr .25fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        ". item-1 item-1 ."
+        ". item-2 item-4 ."
+        ". item-6 item-5 ."
+        ". item-3 item-5 ."
+        ". item-3 item-5 ."
+    ;
+    justify-content: center;
+}
+
+.grid-container7 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container7 .div-1 h2 {
+    font-size: 3vw;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container7 .div-2 {
+    /* margin-left: 15px;*/
+    padding-bottom: 15px;
+    grid-area: item-2;
+    background-color: #dd9595;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-container7 .div-2 img {
+    /* display: flex;
+     flex-direction: column;*/
+     max-width: 100%;
+     height: auto;
+     display: block;
+     border-radius: 5px;
+ }
+
+.grid-container7 .div-2 label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+.grid-container7 .div-3 {
+    grid-area: item-3;
+    background-color: #e722cd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container7 .div-3 div label {
+    font-size: 1rem;
+    color: #eaf0f1;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container7 .div-4 {
+    margin-right: 20px;
+    grid-area: item-4;
+    background-color: rgb(4, 248, 77);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.grid-container7 .div-4 label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+.grid-container7 .data {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container7 .div-5 {
+    margin-right: 20px;
+    grid-area: item-5;
+    background-color: rgb(119, 122, 120);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container7 .div-6 {
+    /*  margin-left: 15px;*/
+    padding-bottom: 15px;
+    grid-area: item-6;
+    background-color: rgb(245, 133, 180);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-container7 .div-6 label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+.grid-container7 .div-6 img {
+    margin-top: 10px;
+    margin-left: 12px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
+
+
+/*******************************************FINALIZA CARRITO.HTML GRID-CONTAINER7****************************************/
+/********************************************************************************************************************/
+/*********************************************  TIENDA.HTML GRID-CONTAINER8***************************************/
+
+.grid-container8 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: repeat(6, .4fr);
+    grid-template-rows: repeat(4, auto);
+    /*SEPARAR ELEMENTOS DE LA GRILLA*/
+    /* column-gap: 15px;*/
+    /*row-gap: 25px;*/
+    grid-template-areas:
+        ". . item-1 item-1 . ."
+        "item-2 item-2 item-2 item-5 item-5 item-5"
+        "item-3 item-4 . item-6 item-6 item-6"
+        "item-7 . . item-6 item-6 item-6"
+    ;
+    justify-content: center;
+}
+
+.grid-container8 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container8 .div-1 h2 {
+    font-size: 3rem;
+    /* Ajusta el tamaño de fuente basado en el ancho de la ventana */
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container8 .div-2 {
+    grid-area: item-2;
+    background-color: #506cb8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container8 .div-2 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+.grid-container8 .div-2 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-container8 .div-3 {
+    grid-area: item-3;
+    background-color: #a750b8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container8 .div-4 {
+    grid-area: item-4;
+    background-color: #b85050;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container8 .div-5 {
+    grid-area: item-5;
+    background-color: #f10505;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container8 .div-5 p {
+    font-size: 1rem;
+}
+
+.grid-container8 .div-5 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+.div-5 .horizontal {
+    display: flex;
+    align-content: space-around;
+}
+
+.div-5 button {
+    margin-bottom: 15px;
+}
+
+.grid-container8 .div-6 {
+    grid-area: item-6;
+    background-color: #ecb80d;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container8 .div-7 {
+    grid-area: item-7;
+    background-color: #500dec;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.grid-container8 .div-7 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+/*******************************************FINALIZA CARRITO.HTML GRID-CONTAINER8****************************************/
+
+/*********************************************  TIENDA.HTML GRID-CONTAINER9***************************************/
+
+.grid-container9 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    /*SEPARAR ELEMENTOS DE LA GRILLA*/
+    /* column-gap: 15px;*/
+    /*row-gap: 25px;*/
+    grid-template-areas:
+        ". item-1 item-1 item-1 ."
+        "item-2 item-3 item-4 item-5 item-6"
+    ;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-container9 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container9 .div-1 h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container9 .div-2 {
+    grid-area: item-2;
+    background-color: #dd9595;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container9 .div-2 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+
+.grid-container9 .div-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container9 .div-3 {
+    grid-area: item-3;
+    background-color: #e722cd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container9 .div-3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container9 .div-3 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+
+.grid-container9 .div-4 {
+    grid-area: item-4;
+    background-color: rgb(247, 46, 72);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container9 .div-4 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container9 .div-4 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+
+.grid-container9 .div-5 {
+    grid-area: item-5;
+    background-color: brown;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container9 .div-5 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container9 .div-5 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+
+.grid-container9 .div-6 {
+    grid-area: item-6;
+    background-color: rgb(102, 69, 190);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container9 .div-6 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.grid-container9 .div-6 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+/*******************************************FINALIZA TIENDA.HTML GRID-CONTAINER9****************************************/
+
+/*********************************************  CUENTA.HTML GRID-CONTAINER10***************************************/
+
+.grid-container10 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "item-1 item-1"
+        "item-5 item-2"
+        "item-5 item-3"
+        "item-5 item-3"
+        "item-4 item-4"
+    ;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.grid-container10 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.grid-container10 .div-1 h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container10 .div-2 {
+    grid-area: item-2;
+    background-color: #50a9b8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.grid-container10 .div-2 h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #e376f7;
+}
+
+.grid-container10 .div-2 p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #768ef7;
+}
+
+.grid-container10 .div-2 label {
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+
+.grid-container10 .div-2 .foto button{
+    margin-top: -48px;
+    margin-left: 150px;
+    padding: 10px;
+    color: #e722cd;
+    font-size: 1rem;
+    background-color: rgb(3, 3, 3);
+    border: 3.2px solid white;
+    border-radius: 25px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.grid-container10 .div-2 .foto button:hover{
+    background-color: aliceblue;
+}
+
+.grid-container10 .div-2 form{
+    width: 250px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container10 .div-2 input{
+    margin-bottom: 15px;
+}
+
+.grid-container10 .div-2 .genero{
+    width: 500px;
+    display: flex;
+}
+
+.grid-container10 .div-2 .genero form{
+    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-left: 400px;
+}
+
+.grid-container10 .div-2 .idioma{
+    width: 500px;
+    display: flex;
+}
+
+.grid-container10 .div-2 .idioma form{
+    margin-top: 0px;
+    margin-left: 400px;
+}
+
+.grid-container10 .div-2 .idioma select{
+    margin-left: 1px;
+}
+
+.grid-container10 .div-3 {
+    grid-area: item-3;
+    background-color: #b8509e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.grid-container10 .div-3 .botones button{
+    margin-right: 5px;
+    padding: 10px;
+    color: #e722cd;
+    font-size: 1rem;
+    background-color: rgb(3, 3, 3);
+    border: 3.2px solid white;
+    border-radius: 25px;
+    text-transform: capitalize;
+    display: flex;
+    max-width: 100%;
+}
+
+.grid-container10 .div-3 .botones button:hover{
+    background-color: aliceblue;
+}
+
+.grid-container10 .div-3 .botones{
+    margin-top: 15px;
+    display: flex;
+    max-width: 100%;
+}
+
+.grid-container10 .div-3 .borrarcuenta button{
+    margin-left: 450px;
+    padding: 10px;
+    color: #e722cd;
+    font-size: 1rem;
+    background-color: rgb(3, 3, 3);
+    border: 3.2px solid white;
+    border-radius: 25px;
+    text-transform: capitalize;
+    display: flex;
+    max-width: 100%;
+}
+
+.grid-container10 .div-3 .borrarcuenta button:hover{
+    background-color: aliceblue;
+}
+
+.grid-container10 .div-4 {
+    grid-area: item-4;
+    background-color: #b88b50;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.grid-container10 .div-5 {
+    grid-area: item-5;
+    background-color: #f10d0d;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.grid-container10 .div-5 h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #e376f7;
+}
+
+.grid-container10 .div-5 label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+/*******************************************FINALIZA CUENTA.HTML GRID-CONTAINER10****************************************/
+
+/*********************************************  CONTACTO.HTML GRID-CONTAINER11***************************************/
+
+.grid-container11 {
+    margin: 35px;
+    border: 2px solid chartreuse;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "item-1 item-1"
+        "item-2 item-3"
+        "item-2 item-3"
+    ;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.grid-container11 .div-1 {
+    grid-area: item-1;
+    background-color: #9cb850;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.grid-container10 .div-1 h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #a750b8;
+}
+
+.grid-container11 .div-2 {
+    grid-area: item-2;
+    background-color: #5074b8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+   /* justify-content: center;*/
+    max-width: 100%;
+}
+
+.grid-container11 .div-2 p{
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    color: #768ef7;   
+}
+
+.grid-container11 .div-2 label{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #eaf0f1;
+}
+
+.grid-container11 .div-2 div{
+    margin-bottom: 10px;
+}
+
+.grid-container11 .div-2 .margen{
+    margin-bottom: 100px;
+}
+
+.grid-container11 .div-2 .area{
+    display: flex;
+   /* margin-top: 30px;*/
+}
+
+.grid-container11 .div-2 .area textarea{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.grid-container11 .div-3 {
+    grid-area: item-3;
+    background-color: #b8509e;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}

@@ -1,0 +1,2152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-header {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.tipografia {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(79, 10, 107);
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio img {
+    width: 280px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+.inicio button {
+    margin-top: 5px;
+    padding-left: 6px;
+    padding-top: 2.5px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    color: #e722cd;
+    font-size: .8rem;
+    background-color: rgb(3, 3, 3);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.inicio button:hover {
+    background-color: aliceblue;
+}
+
+
+@media (min-width:320px) and (max-width:374px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .color-body {
+        background-color: black;
+    }
+
+    .logo-header {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .tipografia {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(79, 10, 107);
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container1 {
+      /*  margin: 0px;*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "item-4"
+            "item-2"
+        ;
+        gap: 5px;
+    }
+
+    .grid-container1 .div-2 {
+        grid-area: item-2;
+        /* background-color: red;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container1 .div-2 img {
+        width: 300px;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    /* Estilo para botones "tienda" y "todos los productos" */
+    .grid-container1 .div-2 button {
+        margin-top: 10px;
+        padding: 2px;
+        color: #e722cd;
+        font-size: .6rem;
+        background-color: rgb(3, 3, 3);
+        border: 1px solid white;
+        border-radius: 5px;
+        text-transform: capitalize;
+    }
+
+    /* Efecto al pasar el cursor sobre botones */
+    .grid-container1 .div-2 button:hover {
+        background-color: aliceblue;
+    }
+
+    .grid-container1 .div-4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-4;
+        /*  background-color: rgb(44, 158, 211);*/
+        border-radius: 5px;
+        align-content: center;
+    }
+
+    .grid-container1 .div-4 h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container1 .div-1 {
+        display: none;
+    }
+
+    .grid-container1 .div-3 {
+        display: none;
+    }
+
+    .grid-container1 .div-5 {
+        display: none;
+    }
+
+    .grid-container2 {
+        width: 320px;
+       /* margin: 0px;*/
+        display: grid;
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1"
+            " item-2 item-3"
+            " item-4 item-5"
+        ;
+        column-gap: 1px;
+        justify-content: center;
+    }
+
+    .grid-container2 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container2 .div-2 {
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-2 img {
+        width: 130px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-2 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-3 {
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-3 img {
+        width: 130px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-3 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-4 {
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-4 img {
+        width: 130px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-4 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-5 {
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-5 img {
+        width: 130px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-5 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 {
+        width: 320px;
+        display: grid;
+        grid-template-columns: repeat(4, .25fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " . item-2 item-2 . "
+            " item-3 item-3 item-4 item-4 "
+            " item-5 item-5 item-6 item-6 "
+        ;
+        column-gap: 1px;
+        justify-content: center;
+    }
+
+    .grid-container3 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container3 .div-2 {
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-2 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-2 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-3 {
+        padding-left: 10px;
+        padding-right: 5px;
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-3 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-3 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-4 {
+        padding-left: 5px;
+        padding-right: 10px;
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-4 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-4 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-5 {
+        padding-left: 10px;
+        padding-right: 5px;
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-5 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-5 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-6 {
+        padding-left: 5px;
+        padding-right: 10px;
+        grid-area: item-6;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-6 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-6 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container4 {
+        width: 320px;
+        display: grid;
+        grid-template-columns: .25fr .20fr .20fr .25fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " item-2 item-3 item-3 item-4 "
+        ;
+    }
+
+    .grid-container4 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+       /* flex-direction: column;*/
+        align-content: center;
+    }
+
+    .grid-container4 .div-1 h2 {
+        margin-left: 20px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+      /*  margin: 0;
+        max-width: 100%;*/
+      /*  overflow-wrap: break-word;*/
+        color: #1db643;
+    }
+
+    .grid-container4 .div-2 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+      /*  flex-direction: column;*/
+      /*  align-items: center;*/
+    }
+
+    .grid-container4 .div-2 p{
+        text-align:center;
+        color: rgb(253, 253, 253);
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .grid-container4 .div-3 {
+        margin-left: 20px;
+        margin-right: 5px;
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+      /*  flex-direction: column;
+        align-items: center;*/
+    }
+
+    .grid-container4 .div-3 img {
+        width: 120px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container4 .div-4 {
+        margin-left: 130px;
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+     /*   flex-direction: column;
+        align-items: center;*/
+    }
+
+    .grid-container4 .div-4 p{
+        text-align: center;
+        color: rgb(253, 253, 253);
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+
+    .grid-container5 {
+     /*   margin: 10px;*/
+      /*  border: 2px solid chartreuse;*/
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr .5fr;
+        /* Cuatro columnas */
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            ". item-1 item-1 ."
+            ". item-2 item-2 ."
+            "item-3 item-3 item-3 item-3"
+        ;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-1 {
+        margin-top: 15px;
+        grid-area: item-1;
+      /*  background-color: #9cb850;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+    
+    .grid-container5 .div-2 {
+        grid-area: item-2;
+      /*  background-color: #1c976e;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-2 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container5 .div-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-3;
+      /*  background-color: #295394;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-3 p {
+        text-align: justify;
+        color: aquamarine;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .grid-container6 {
+        display: grid;
+        grid-template-columns: 130px 130px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1 "
+            " item-2 item-3 " 
+            " item-4 item-5 "
+        ;
+        gap: 5px;
+        justify-content: center;
+    }
+    
+    .grid-container6 .div-1 {
+        margin-top: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container6 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+    
+    .grid-container6 .div-2 {
+        margin-right: 30px;
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-2 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-2 p {
+        text-align: justify;
+        color: aquamarine;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-3 {
+        margin-left: 30px;
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-3 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-3 p {
+        text-align: justify;
+        color: aquamarine;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-4 {
+        margin-right: 30px;
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-4 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-4 p {
+        text-align: justify;
+        color: aquamarine;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-5 {
+        margin-left: 30px;
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-5 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .div-5 p {
+        text-align: justify;
+        color: aquamarine;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    footer .div-footer1{
+        display: none;
+    }
+
+    footer .imagen-footer{
+        margin-left: -32px;
+        background-color: dimgray;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+
+
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .color-body {
+        background-color: black;
+    }
+
+    .logo-header {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .tipografia {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(79, 10, 107);
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container1 {
+      /*  margin: 0px;*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "item-4"
+            "item-2"
+        ;
+        gap: 5px;
+    }
+
+    .grid-container1 .div-2 {
+        grid-area: item-2;
+        /* background-color: red;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container1 .div-2 img {
+        width: 340px;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    /* Estilo para botones "tienda" y "todos los productos" */
+    .grid-container1 .div-2 button {
+        margin-top: 10px;
+        padding: 2px;
+        color: #e722cd;
+        font-size: .8rem;
+        background-color: rgb(3, 3, 3);
+        border: 1px solid white;
+        border-radius: 5px;
+        text-transform: capitalize;
+    }
+
+    /* Efecto al pasar el cursor sobre botones */
+    .grid-container1 .div-2 button:hover {
+        background-color: aliceblue;
+    }
+
+    .grid-container1 .div-4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-4;
+        /*  background-color: rgb(44, 158, 211);*/
+        border-radius: 5px;
+        align-content: center;
+    }
+
+    .grid-container1 .div-4 h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container1 .div-1 {
+        display: none;
+    }
+
+    .grid-container1 .div-3 {
+        display: none;
+    }
+
+    .grid-container1 .div-5 {
+        display: none;
+    }
+
+    .grid-container2 {
+        width: 375px;
+       /* margin: 0px;*/
+        display: grid;
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1"
+            " item-2 item-3"
+            " item-4 item-5"
+        ;
+        column-gap: 1px;
+        justify-content: center;
+    }
+
+    .grid-container2 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container2 .div-2 {
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-2 img {
+        width: 160px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-2 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-3 {
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-3 img {
+        width: 160px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-3 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-4 {
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-4 img {
+        width: 160px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-4 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-5 {
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-5 img {
+        width: 160px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-5 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 {
+       /* width: 375px;*/
+        display: grid;
+        grid-template-columns: repeat(4, .25fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " . item-2 item-2 . "
+            " item-3 item-3 item-4 item-4 "
+            " item-5 item-5 item-6 item-6 "
+        ;
+        column-gap: 1px;
+        justify-content: center;
+    }
+
+    .grid-container3 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container3 .div-2 {
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-2 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-2 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-3 {
+       /* padding-left: 10px;
+        padding-right: 5px;*/
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-3 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-3 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-4 {
+      /*  padding-left: 5px;
+        padding-right: 10px;*/
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-4 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-4 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-5 {
+      /*  padding-left: 10px;
+        padding-right: 5px;*/
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-5 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-5 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-6 {
+      /*  padding-left: 5px;
+        padding-right: 10px;*/
+        grid-area: item-6;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-6 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-6 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container4 {
+        width: 375px;
+        display: grid;
+        grid-template-columns: .25fr .20fr .20fr .25fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " item-2 item-3 item-3 item-4 "
+        ;
+    }
+
+    .grid-container4 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+       /* flex-direction: column;*/
+        align-content: center;
+    }
+
+    .grid-container4 .div-1 h2 {
+        margin-left: 45px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+      /*  margin: 0;
+        max-width: 100%;*/
+      /*  overflow-wrap: break-word;*/
+        color: #1db643;
+    }
+
+    .grid-container4 .div-2 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+      /*  flex-direction: column;*/
+      /*  align-items: center;*/
+    }
+
+    .grid-container4 .div-2 p{
+        text-align:center;
+        color: rgb(253, 253, 253);
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .grid-container4 .div-3 {
+        margin-left: 22px;
+        margin-right: 5px;
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+      /*  flex-direction: column;
+        align-items: center;*/
+    }
+
+    .grid-container4 .div-3 img {
+        width: 170px;
+        height: 150px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container4 .div-4 {
+        margin-left: 180px;
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+     /*   flex-direction: column;
+        align-items: center;*/
+    }
+
+    .grid-container4 .div-4 p{
+        text-align: center;
+        color: rgb(253, 253, 253);
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+
+    .grid-container5 {
+        width: 375px;
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr .5fr;
+        /* Cuatro columnas */
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            ". item-1 item-1 ."
+            "item-2 item-2 item-2 item-2"
+            "item-3 item-3 item-3 item-3"
+        ;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-1 {
+        margin-top: 15px;
+        grid-area: item-1;
+      /*  background-color: #9cb850;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+    
+    .grid-container5 .div-2 {
+        grid-area: item-2;
+      /*  background-color: #1c976e;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-2 img {
+        width: 355px;
+        height: 200px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container5 .div-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-3;
+      /*  background-color: #295394;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-3 p {
+        text-align: justify;
+        color: aquamarine;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .grid-container6 {
+        width: 375px;
+        display: grid;
+        grid-template-columns: 180px 180px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1 "
+            " item-2 item-3 " 
+            " item-4 item-5 "
+        ;
+       /* gap: 5px;*/
+        justify-content: center;
+    }
+    
+    .grid-container6 .div-1 {
+        margin-top: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container6 .div-1 h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.2;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+    
+    .grid-container6 .div-2 {
+        width: 130px;
+        margin-right: 15px;
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-2 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-2 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+       /* margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-3 {
+        width: 130px;
+       /* margin-left: 30px;*/
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-3 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-3 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+      /*  margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-4 {
+        width: 130px;
+        margin-right: 15px;
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-4 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-4 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+       /* margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-5 {
+        width: 130px;
+      /*  margin-left: 30px;*/
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-5 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-5 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+      /*  margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    footer .div-footer1{
+        display: none;
+    }
+
+    footer .imagen-footer{
+        margin-left: -32px;
+        background-color: dimgray;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+
+
+@media (min-width: 425px) and (max-width:767px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .color-body {
+        background-color: black;
+    }
+
+    .logo-header {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .tipografia {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(79, 10, 107);
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container1 {
+      /*  margin: 0px;*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "item-4"
+            "item-2"
+        ;
+        gap: 5px;
+    }
+
+    .grid-container1 .div-2 {
+        grid-area: item-2;
+        /* background-color: red;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container1 .div-2 img {
+        width: 400px;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    /* Estilo para botones "tienda" y "todos los productos" */
+    .grid-container1 .div-2 button {
+        margin-top: 10px;
+        padding: 2px;
+        color: #e722cd;
+        font-size: 1rem;
+        background-color: rgb(3, 3, 3);
+        border: 1px solid white;
+        border-radius: 5px;
+        text-transform: capitalize;
+    }
+
+    /* Efecto al pasar el cursor sobre botones */
+    .grid-container1 .div-2 button:hover {
+        background-color: aliceblue;
+    }
+
+    .grid-container1 .div-4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-4;
+        /*  background-color: rgb(44, 158, 211);*/
+        border-radius: 5px;
+        align-content: center;
+    }
+
+    .grid-container1 .div-4 h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container1 .div-1 {
+        display: none;
+    }
+
+    .grid-container1 .div-3 {
+        display: none;
+    }
+
+    .grid-container1 .div-5 {
+        display: none;
+    }
+
+    .grid-container2 {
+        width: 425px;
+       /* margin: 0px;*/
+        display: grid;
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1"
+            " item-2 item-3"
+            " item-4 item-5"
+        ;
+        column-gap: 1px;
+        justify-content: center;
+    }
+
+    .grid-container2 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-1 h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container2 .div-2 {
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-2 img {
+        width: 190px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-2 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-3 {
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-3 img {
+        width: 190px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-3 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-4 {
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-4 img {
+        width: 190px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-4 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container2 .div-5 {
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container2 .div-5 img {
+        width: 190px;
+        height: 100px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container2 .div-5 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 {
+        width: 425px;
+        display: grid;
+        grid-template-columns: repeat(4, .25fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " . item-2 item-2 . "
+            " item-3 item-3 item-4 item-4 "
+            " item-5 item-5 item-6 item-6 "
+        ;
+        column-gap: 1px;
+        justify-content: center;
+    }
+
+    .grid-container3 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-1 h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+
+    .grid-container3 .div-2 {
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-2 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-2 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-3 {
+       /* padding-left: 10px;
+        padding-right: 5px;*/
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-3 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-3 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-4 {
+      /*  padding-left: 5px;
+        padding-right: 10px;*/
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-4 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-4 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-5 {
+      /*  padding-left: 10px;
+        padding-right: 5px;*/
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-5 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-5 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container3 .div-6 {
+      /*  padding-left: 5px;
+        padding-right: 10px;*/
+        grid-area: item-6;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container3 .div-6 img {
+        width: 200px;
+        height: 120px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container3 .div-6 label {
+        font-size: 1rem;
+        color: #eaf0f1;
+    }
+
+    .grid-container4 {
+        width: 425px;
+        display: grid;
+        grid-template-columns: .25fr .25fr .25fr .25fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " item-2 item-3 item-3 item-4 "
+        ;
+    }
+
+    .grid-container4 .div-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+       /* flex-direction: column;*/
+        align-content: center;
+    }
+
+    .grid-container4 .div-1 h2 {
+        margin-left: 55px;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.2;
+      /*  margin: 0;
+        max-width: 100%;*/
+      /*  overflow-wrap: break-word;*/
+        color: #1db643;
+    }
+
+    .grid-container4 .div-2 {
+        margin-left: 10px;
+        margin-top: 40px;
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+      /*  flex-direction: column;*/
+      /*  align-items: center;*/
+    }
+
+    .grid-container4 .div-2 p{
+        text-align:center;
+        color: rgb(253, 253, 253);
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .grid-container4 .div-3 {
+        margin-left: 22px;
+        margin-right: 5px;
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+      /*  flex-direction: column;
+        align-items: center;*/
+    }
+
+    .grid-container4 .div-3 img {
+        margin-left: -5px;
+        width: 300px;
+        height: 180px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .grid-container4 .div-4 {
+        margin-top: 30px;
+        margin-left: 230px;
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+     /*   flex-direction: column;
+        align-items: center;*/
+    }
+
+    .grid-container4 .div-4 p{
+        text-align: center;
+        color: rgb(253, 253, 253);
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+
+    .grid-container5 {
+        width: 425px;
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr .5fr;
+        /* Cuatro columnas */
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            ". item-1 item-1 ."
+            "item-2 item-2 item-2 item-2"
+            "item-3 item-3 item-3 item-3"
+        ;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-1 {
+        margin-top: 15px;
+        grid-area: item-1;
+      /*  background-color: #9cb850;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-1 h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+    
+    .grid-container5 .div-2 {
+        grid-area: item-2;
+      /*  background-color: #1c976e;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-2 img {
+        width: 405px;
+        height: 250px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container5 .div-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-area: item-3;
+      /*  background-color: #295394;*/
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container5 .div-3 p {
+        text-align: justify;
+        color: aquamarine;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .grid-container6 {
+        width: 425px;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1 "
+            " item-2 item-3 " 
+            " item-4 item-5 "
+        ;
+       /* gap: 5px;*/
+        justify-content: center;
+    }
+    
+    .grid-container6 .div-1 {
+        margin-top: 15px;
+        grid-area: item-1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container6 .div-1 h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        color: #1db643;
+    }
+    
+    .grid-container6 .div-2 {
+        width: 130px;
+        margin-right: 15px;
+        grid-area: item-2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-2 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-2 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+       /* margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-3 {
+        width: 130px;
+        margin-left: 70px;
+        grid-area: item-3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-3 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-3 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+      /*  margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-4 {
+        width: 130px;
+        margin-right: 15px;
+        grid-area: item-4;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-4 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-4 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+       /* margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
+    .grid-container6 .div-5 {
+        width: 130px;
+        margin-left: 70px;
+        grid-area: item-5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container6 .div-5 img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .grid-container6 .div-5 p {
+        width: 130px;
+        text-align: justify;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.5;
+      /*  margin: 0;*/
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    footer .div-footer1{
+        display: none;
+    }
+
+    footer .imagen-footer{
+        margin-left: -32px;
+        background-color: dimgray;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+

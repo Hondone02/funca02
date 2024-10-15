@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="fondo">
+
+    <header class="header">
+        <!-- Uso la etiqueta header donde maqueto el encabezado de la página que se repite en el resto de los archivos -->
+
+        <div>
+            <a href="../index.html"> <video class="logo-header" src="../assets/videos/v-logo.mp4" loop autoplay
+                    muted></video></a>
+        </div>
+
+        <div class="div2">
+            <nav> <!-- Uso la etiqueta nav para indicar que es el menú navegable del sitio (un solo uso por .html) -->
+                <ul class="ul-display estilo-lista"> <!-- Lista desordenada -->
+                    <li><a class="links-menu" href="../index.html">Inicio</a></li>
+                    <li><a class="links-menu" href="tienda.html">Tienda</a></li>
+                    <li><a class="links-menu" href="carrito.html">Carrito</a></li>
+                    <li><a class="links-menu" href="cuenta.html">Cuenta</a></li>
+                    <li><a class="links-menu" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="div-menu">
+            <label class="label-color" for="Menu">Menu</label>
+            <div><img src="../assets/images/icono-menu.png" alt="icono-menu"></div>
+        </div>
+
+    </header>
+    
+    <main>
+        <section class="grid-container10">
+            
+            <div class="div-1">
+                <h2>Usuario</h2>
+            </div>
+
+            <div class="div-2">
+                <h3>Mis datos</h3>
+                <p>Desde esta página podrás cambiar tus datos de usuario en la aplicación. ninguno de tus datos de usuario será visible, excepto tu nombre, apellido y foto de perfil.</p>
+                <div class="foto">
+                    <img src="../assets/images/usuario.png" alt="foto-usuario">
+                    <button>EDITAR</button>
+                </div>
+
+                <form action="enviar.php" method="post">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" required>
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="Apellido" required>
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="Nacimiento">Nacimiento</label>
+                    <input type="date" id="Nacimiento" name="Nacimiento" required>
+                </form>
+
+                <div class="genero">
+                    <label for="genero">Género</label>
+                    <form action="enviar.php" method="post">
+                        <select name="tipo" id="">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="no-binario">No binario</option>
+                        </select>
+
+                    </form>
+                </div>
+
+                <div class="idioma">
+                    <label for="idioma">Idioma</label>
+                    <form action="enviar.php" method="post">
+                        <select name="tipo" id="">
+                            <option value="Esañol">Español</option>
+                            <option value="Inglés">Ingles</option>
+                            <option value="Italiano">Italiano</option>
+                        </select>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="div-3">
+                <div class="botones">
+                    <button>GUARDAR</button>
+                    <button>CANCELAR</button>
+                </div>
+
+                <div class="borrarcuenta" >
+                    <button>BORRAR CUENTA</button>
+                </div>
+            </div>
+
+            <div class="div-4">
+                <p>
+                    Una vez hayas hecho clic aparecerá un mensaje de conversación para que puedas confirmar la eliminación. Escribe la frase "Delete Account" respetando mayúsculas y minúsculas y finalmente haz clic sobre el botón de Borrar.
+                </p>
+            </div>
+
+            <div class="div-5">
+                <h3>Mi cuenta</h3>
+                <label for="mis-datos">Mis datos</label>
+                <label for="conectar-con-zoom">Conectar con Zoom</label>
+                <label for="mi-cuenta-de-correo">Mi cuenta de Correo</label>
+                <label for="Salir">Salir</label>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer1 estilo-lista">
+
+            <div class="div-footer1">
+                <li> <label class="color-footer" for="Atención-al-cliente">Atención al cliente</label></li>
+                <li><label class="label-color" for="atencion-al-cliente">Atención al cliente</label></li>
+                <li><label class="label-color" for="devoluciones">Devoluciones</label></li>
+                <li><label class="label-color" for="pagos">Pagos</label></li>
+                <li><label class="label-color" for="envíos">Envíos</label></li>
+                <li><label class="label-color" for="terminos-de-servicios">Términos de servicios</label></li>
+                <li><label class="label-color" for="política-y-privacidad">Política y privacidad</label></li>
+            </div>
+
+            <div class="div-footer1">
+                <label for="informacion-corporativa" class="color-footer">Información Corporativa</label>
+                <li><label class="label-color" for="sobre-nosotros">Sobre nosotros</label></li>
+                <li><label class="label-color" for="marcas">Marcas</label></li>
+                <li><label class="label-color" for="afiliados">Afiliados</label></li>
+                <li><label class="label-color" for="inversores">Inversores</label></li>
+                <li><label class="label-color" for="inversores">Cookies</label></li>
+            </div>
+
+            <div class="div-footer1">
+                <label for="Gift-Card" class="label-div3 color-footer">Gift Card</label>
+                <li><label class="label-color" for="comprar-giftcard">Comprar Gift cards</label></li>
+                <li><label class="label-color" for="canjear-giftcard">Canjear Gift cards</label></li>
+            </div>
+
+            <div class="imagen-footer">
+                <img class="img" src="../assets/icono.png" width="45" height="45" alt="">
+                <label id="div4" class="label-color" for="maxi-tienda">&copy; 2024 Maxi Tienda.</label>
+                <label id="div5" class="label-color" for="maxi-tienda">Todos los derechos reservados.</label>
+            </div>
+
+        </ul>
+
+    </footer>
+    
+</body>    
+
+</html>

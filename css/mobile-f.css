@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-header {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.tipografia{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(79, 10, 107);
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio img{
+    width: 280px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+.inicio button{
+    margin-top: 5px;
+    padding-left: 6px;
+    padding-top: 2.5px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    color: #e722cd;
+    font-size: .8rem;
+    background-color: rgb(3, 3, 3);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.inicio button:hover {
+    background-color: aliceblue;
+}
+
+
+
+@media (min-width: 426px){
+    
+    nav.navbar {
+        display: none; 
+      }
+}
+
+
+/*
+
+@media (min-width: 321px){
+    .logo-header {
+        display: none;
+    }
+
+    .maxi{
+        display: none;
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+
+    .bg-body-tertiary{
+        background-color: black;
+    }
+
+    
+    
+}
+*/
